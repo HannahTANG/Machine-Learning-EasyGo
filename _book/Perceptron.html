@@ -65,6 +65,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="SVM.html" />
+    
     
     <link rel="prev" href="./" />
     
@@ -121,6 +123,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3" data-path="SVM.html">
+            
+                <a href="SVM.html">
+            
+                    
+                    支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -166,7 +181,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x611F;&#x77E5;&#x673A;">&#x611F;&#x77E5;&#x673A;</h1>
+                                <h1 id="&#x611F;&#x77E5;&#x673A;&#xFF08;perceptron&#xFF09;">&#x611F;&#x77E5;&#x673A;&#xFF08;Perceptron&#xFF09;</h1>
 <h2 id="1-&#x76F4;&#x89C2;&#x89E3;&#x91CA;">1. &#x76F4;&#x89C2;&#x89E3;&#x91CA;</h2>
 <p>&#x6211;&#x4EEC;&#x5E38;&#x5E38;&#x542C;&#x5230;&#x611F;&#x77E5;&#x673A;&#xFF08;perceptron&#xFF09;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x90A3;&#x4E48;&#x5230;&#x5E95;&#x4EC0;&#x4E48;&#x662F;&#x611F;&#x77E5;&#x673A;&#xFF1F;&#x611F;&#x77E5;&#x673A;&#x7684;&#x4F5C;&#x7528;&#x53C8;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <center class="half">
@@ -505,10 +520,14 @@ print(p.score([[<span class="hljs-number">4</span>, <span class="hljs-number">4<
 
             
                 
-                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 简介">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 简介">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="SVM.html" class="navigation navigation-next " aria-label="Next page: 支持向量机">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -517,7 +536,7 @@ print(p.score([[<span class="hljs-number">4</span>, <span class="hljs-number">4<
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"感知机","level":"1.2","depth":1,"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["donate","katex","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://img-blog.csdnimg.cn/20200130135337950.png","alipayText":"支付宝","button":"打赏","title":"","wechat":"https://img-blog.csdnimg.cn/20200130135406205.png","wechatText":"微信"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Hannah","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Machine Learning EasyGo","language":"zh-hans","gitbook":"*","description":"图解机器学习，原理解释和程序实现"},"file":{"path":"Perceptron.md","mtime":"2020-02-29T13:48:08.808Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-08T14:26:32.920Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"感知机","level":"1.2","depth":1,"next":{"title":"支持向量机","level":"1.3","depth":1,"path":"SVM.md","ref":"SVM.md","articles":[]},"previous":{"title":"简介","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["donate","katex","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://img-blog.csdnimg.cn/20200130135337950.png","alipayText":"支付宝","button":"打赏","title":"","wechat":"https://img-blog.csdnimg.cn/20200130135406205.png","wechatText":"微信"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Hannah","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Machine Learning EasyGo","language":"zh-hans","gitbook":"*","description":"图解机器学习，原理解释和程序实现"},"file":{"path":"Perceptron.md","mtime":"2020-03-08T15:01:03.242Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-08T15:02:01.283Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
