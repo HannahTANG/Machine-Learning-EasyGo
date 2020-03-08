@@ -1,0 +1,23 @@
+{
+    "title": "Machine Learning EasyGo",
+    "description": "图解机器学习，原理解释和程序实现",
+    "author": "Hannah",
+    "language": "zh-hans",
+    "root": ".",
+
+    "plugins": [
+        "donate",
+        "katex"
+    ],
+
+    "pluginsConfig": {
+        "donate": {
+            "wechat": "https://img-blog.csdnimg.cn/20200130135406205.png",
+            "alipay": "https://img-blog.csdnimg.cn/20200130135337950.png",
+            "title": "",
+            "button": "打赏",
+            "alipayText": "支付宝",
+            "wechatText": "微信"
+        }
+    }
+}
